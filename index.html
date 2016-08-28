@@ -61,12 +61,12 @@ L.mapbox.accessToken = 'pk.eyJ1IjoiZ3ViYmlsYWJzIiwiYSI6IndJUmJRVHMifQ.4IS56e-5f2
 var map = L.mapbox.map('map', 'mapbox.streets').setView([12.973,77.590], 11).addControl(L.mapbox.shareControl());  
 var layers = document.getElementById('menu-ui');
 
-// addLayer(L.mapbox.tileLayer('mapbox.satellite'), 'Satellite Map', 1);
-addLayer(L.mapbox.tileLayer('mapbox.outdoors'), 'Terrain', 1);
-addLayer(L.mapbox.tileLayer('gubbilabs.Streams'), 'Streams (1920s)', 2);
-addLayer(L.mapbox.tileLayer('gubbilabs.Tanks1920s'), 'Tanks (1920s)', 3);
+addLayer(L.mapbox.tileLayer('mapbox.satellite'), 'Satellite Map', 1);
+addLayer(L.mapbox.tileLayer('mapbox.outdoors'), 'Terrain', 2);
+addLayer(L.mapbox.tileLayer('gubbilabs.Streams'), 'Streams (1920s)', 3);
+addLayer(L.mapbox.tileLayer('gubbilabs.Tanks1920s'), 'Tanks (1920s)', 4);
 //addLayer(L.mapbox.tileLayer('gubbilabs.Tanks'), 'Present Tanks', 4);
-addLayer(L.mapbox.tileLayer('gubbilabs.BBMP'), 'BBMP', 4);
+addLayer(L.mapbox.tileLayer('gubbilabs.BBMP'), 'BBMP', 5);
 
 function addLayer(layer, name, zIndex) {
     layer
